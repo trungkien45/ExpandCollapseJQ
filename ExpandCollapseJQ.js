@@ -6,7 +6,7 @@ $.fn.expandcollapse=function(adjustheight,moreText,lessText){
     else {
     	this.find(":first").css("height", adjustheight).css("display","inline");
         $("a.adjust").css("display", "none");
-        $(".adjust").parents(":first").find(".continued").css("display", "none");
+        this.find(".continued").css("display", "none");
     }
     $("a.adjust").text(moreText);
     $(".adjust").toggle(function () {
