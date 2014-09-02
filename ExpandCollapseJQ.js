@@ -1,6 +1,6 @@
 $.fn.expandcollapse=function(adjustheight,moreText,lessText){
 	this.append("<div class=\"continued\" style=\"display:inline\">[...]</div><a class=\"adjust\" href=\"#\">"+moreText +"</a>");
-	if (this.find(":first").height() > adjustheight) {
+    if (this.find(":first").height() > adjustheight) {
         this.find(":first").css("height", adjustheight).css("overflow", "hidden").css("display","block");
     }
     else {
